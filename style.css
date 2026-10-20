@@ -1,0 +1,58 @@
+/* Colors are stored in variables so they are easy to change */
+:root {
+  --text: #222;
+  --background: #fafafa;
+  --link: #2a5d9f;
+  --line: #ddd;
+}
+
+/* Dark mode: only runs if the visitor's device is set to dark */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #e6e6e6;
+    --background: #181818;
+    --link: #8ab4f8;
+    --line: #333;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--background);
+  max-width: 650px;       /* keeps lines short and readable */
+  margin: 0 auto;         /* centers the page */
+  padding: 1rem;
+}
+
+a {
+  color: var(--link);
+}
+
+header {
+  padding: 2rem 0 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+header p {
+  margin: 0;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  margin-right: 1rem;
+}
+
+section {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+footer {
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
